@@ -10,8 +10,9 @@ erro_teorico = abs(h.^2 * cos(x0) / 6);
 
 #{
 Note que, para h = 10^-20 .. 10^0:
-- A curva de erro teórico da nova tabela é muito mais íngreme, ou seja, o novo erro teórico é mais preciso.
-- Na nova tabela, a partir de h = 10^(-4.5) o erro absoluto começa a seguir o erro teórico. Na antiga tabela, a partir de h = 10^(-7.5) o erro absoluto começa a seguir o erro teórico. Para valores menores de h, ambos os métodos ainda carregam bastante erros de arredondamento.
+- A nova curva de erro teórico é mais íngreme, ou seja, o novo erro teórico é menor comparado com o antigo para valores iguais de h. Logo, o novo é mais preciso.
+- O erro absoluto mínimo é menor na nova curva de erro absoluto, chegando a uma ordem de 10^-12. Enquanto isso, o erro absoluto mínimo na antiga curva é da ordem de 10^-10.
+- No novo plot, a partir de h = 10^(-4.5) o erro absoluto começa a seguir o erro teórico. No antigo plot, a partir de h = 10^(-7.5) o erro absoluto começa a seguir o erro teórico. Para valores menores de h, ambos os métodos ainda carregam bastante erros de arredondamento.
 #}
 
 % Plot
