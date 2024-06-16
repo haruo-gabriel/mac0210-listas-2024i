@@ -8,9 +8,12 @@ yi = [1; 0.9; 0.5];
 zi = log(yi);
 
 % Interpolação monomial usando matriz de Vandermonde
+
+% Os gamma serão impressos na sequência gamma_0, gamma_1, gamma_2 do enunciado
+% de cima para baixo
 gamma = fliplr(vander(xi)) \ zi
 
-x = linspace(0, 6, 500);
+x = linspace(0, 6, 1000);
 
 % Note que v(x) = ln(gamma(1)) + gamma(2)*X + gamma(3)*x^2.
 % É necessário a correção e^gamma(1) para calcular a função u(x).
